@@ -16,9 +16,8 @@ public class MainMenu extends World
     public MainMenu()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
-        World level1 = new Level1();
-        Greenfoot.setWorld(level1);
+        super(800, 400, 1);
+        Greenfoot.setWorld(new Level1());
         
         
         

@@ -10,20 +10,7 @@ import java.util.List;
 public class Enemy extends Actor
 {
 
-    public int health;
-    public int attackSpeed;
-    public int movementSpeed;
-    public Player[] playersList;
-    
-    public Enemy(int health, int attackSpeed, int movementSpeed, Player[] playersList){
-    
-        this.health = health;
-        this.attackSpeed = attackSpeed;
-        this.movementSpeed = movementSpeed;
-        this.playersList = playersList;
-        
-    }
-    
+    public Player[] players;
     
     public void act() 
     {

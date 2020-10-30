@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Level1 extends World
 {
     
+    public static int score = 0;
+    private long startingTime = System.currentTimeMillis();
     
     
     /**
@@ -18,29 +20,53 @@ public class Level1 extends World
     public Level1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
-        long startingTime = System.currentTimeMillis();
+        super(800, 400, 1);
         
-        Player[] playerList = new Player[2];
-        Player player1 = new Player(); 
+
+        
+        Player[] players = new Player[2];
+        
+        Player player1 = new Player(1); 
         addObject(player1, 100, 50);
-        playerList[0] = player1;
+        players[0] = player1;
+        
+        Player player2 = new Player(2); 
+        addObject(player2, 100, 100);
+        players[1] = player2;
+        
+        Coin coin1 = new Coin();
+        addObject(coin1, 200, 200);
+        Coin coin2 = new Coin();
+        addObject(coin2, 300, 200);
+        Coin coin3 = new Coin();
+        addObject(coin3, 300, 300);
+        Coin coin4 = new Coin();
+        addObject(coin4, 400, 350);
+        Coin coin5 = new Coin();
+        addObject(coin5, 200, 250);
+        
+
+        
+
         
         
         
-        Goomba goomba = new Goomba(playerList);
-        addObject(goomba, 100, 100);
-        
-        
-        
-        Timer timer = new Timer(startingTime);
+
         //addObject(timer, 0, 0);
         
     }
     
-    public void act(){
+    public void setScore(int newScore){this.score = newScore;}
+    
+    public void act() {
 
-
+        // Timer
+        long currentTime = (System.currentTimeMillis() - startingTime) / 1000;
+        showText("Time: " + String.valueOf(currentTime), getWidth() / 2, getWidth()/15);
+        
+        // Score
+        showText("Score: " + String.valueOf(score), getWidth() / 2, getWidth()/10);
+        
         
         
     }

@@ -1,9 +1,11 @@
 #BlueJ class context
 comment0.target=Level1
 comment1.params=
-comment1.target=void\ addWalls()
+comment1.target=void\ addSmallDots()
 comment2.params=
-comment2.target=Level1()
+comment2.target=void\ addWalls()
 comment3.params=
-comment3.target=void\ act()
-numComments=4
+comment3.target=Level1()
+comment4.params=
+comment4.target=void\ act()
+numComments=5

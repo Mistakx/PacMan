@@ -4,9 +4,623 @@ import java.util.concurrent.TimeUnit;
 public class Level1 extends World {
 
     public static int score = 0;
-    public static int playersHealth = 0;
+    public static int playersHealth = 3;
     private long startingTime = System.currentTimeMillis();
 
+    public void addSmallDots(){
+    
+    
+        SmallDot smallDot1 = new SmallDot();
+        addObject(smallDot1, 19, 4);
+        SmallDot smallDot2 = new SmallDot();
+        addObject(smallDot2, 20, 4);
+        SmallDot smallDot3 = new SmallDot();
+        addObject(smallDot3, 21, 4);
+        SmallDot smallDot4 = new SmallDot();
+        addObject(smallDot4, 22, 4);
+        SmallDot smallDot5 = new SmallDot();
+        addObject(smallDot5, 23, 4);
+        SmallDot smallDot6 = new SmallDot();
+        addObject(smallDot6, 24, 4);
+        SmallDot smallDot7 = new SmallDot();
+        addObject(smallDot7, 25, 4);
+        SmallDot smallDot8 = new SmallDot();
+        addObject(smallDot8, 26, 4);
+        SmallDot smallDot9 = new SmallDot();
+        addObject(smallDot9, 27, 4);
+        SmallDot smallDot10 = new SmallDot();
+        addObject(smallDot10, 28, 4);
+        SmallDot smallDot11 = new SmallDot();
+        addObject(smallDot11, 29, 4);
+        SmallDot smallDot12 = new SmallDot();
+        addObject(smallDot12, 30, 4);
+        SmallDot smallDot13 = new SmallDot();
+        addObject(smallDot13, 19, 5);
+        SmallDot smallDot14 = new SmallDot();
+        addObject(smallDot14, 25, 5);
+        SmallDot smallDot15 = new SmallDot();
+        addObject(smallDot15, 30, 5);
+        SmallDot smallDot16 = new SmallDot();
+        addObject(smallDot16, 19, 6);
+        SmallDot smallDot17 = new SmallDot();
+        addObject(smallDot17, 25, 6);
+        SmallDot smallDot18 = new SmallDot();
+        addObject(smallDot18, 30, 6);
+        SmallDot smallDot19 = new SmallDot();
+        addObject(smallDot19, 19, 7);
+        SmallDot smallDot20 = new SmallDot();
+        addObject(smallDot20, 25, 7);
+        SmallDot smallDot21 = new SmallDot();
+        addObject(smallDot21, 30, 7);
+        SmallDot smallDot22 = new SmallDot();
+        addObject(smallDot22, 18, 8);
+        SmallDot smallDot23 = new SmallDot();
+        addObject(smallDot23, 19, 8);
+        SmallDot smallDot24 = new SmallDot();
+        addObject(smallDot24, 20, 8);
+        SmallDot smallDot25 = new SmallDot();
+        addObject(smallDot25, 21, 8);
+        SmallDot smallDot26 = new SmallDot();
+        addObject(smallDot26, 22, 8);
+        SmallDot smallDot27 = new SmallDot();
+        addObject(smallDot27, 23, 8);
+        SmallDot smallDot28 = new SmallDot();
+        addObject(smallDot28, 24, 8);
+        SmallDot smallDot29 = new SmallDot();
+        addObject(smallDot29, 19, 8);
+        SmallDot smallDot30 = new SmallDot();
+        addObject(smallDot30, 20, 8);
+        SmallDot smallDot31 = new SmallDot();
+        addObject(smallDot31, 21, 8);
+        SmallDot smallDot32 = new SmallDot();
+        addObject(smallDot32, 22, 8);
+        SmallDot smallDot33 = new SmallDot();
+        addObject(smallDot33, 23, 8);
+        SmallDot smallDot34 = new SmallDot();
+        addObject(smallDot34, 24, 8);
+        SmallDot smallDot35 = new SmallDot();
+        addObject(smallDot35, 25, 8);
+        SmallDot smallDot36 = new SmallDot();
+        addObject(smallDot36, 26, 8);
+        SmallDot smallDot37 = new SmallDot();
+        addObject(smallDot37, 27, 8);
+        SmallDot smallDot38 = new SmallDot();
+        addObject(smallDot38, 28, 8);
+        SmallDot smallDot39 = new SmallDot();
+        addObject(smallDot39, 29, 8);
+        SmallDot smallDot40 = new SmallDot();
+        addObject(smallDot40, 30, 8);
+        
+        //smallDots top left
+        
+        SmallDot smallDot41 = new SmallDot();
+        addObject(smallDot41, 5, 4);
+        SmallDot smallDot42 = new SmallDot();
+        addObject(smallDot42, 6, 4);
+        SmallDot smallDot43 = new SmallDot();
+        addObject(smallDot43, 7, 4);
+        SmallDot smallDot44 = new SmallDot();
+        addObject(smallDot44, 8, 4);
+        SmallDot smallDot45 = new SmallDot();
+        addObject(smallDot45, 9, 4);
+        SmallDot smallDot46 = new SmallDot();
+        addObject(smallDot46, 10, 4);
+        SmallDot smallDot47 = new SmallDot();
+        addObject(smallDot47, 11, 4);
+        SmallDot smallDot48 = new SmallDot();
+        addObject(smallDot48, 12, 4);
+        SmallDot smallDot49 = new SmallDot();
+        addObject(smallDot49, 13, 4);
+        SmallDot smallDot50 = new SmallDot();
+        addObject(smallDot50, 14, 4);
+        SmallDot smallDot51 = new SmallDot();
+        addObject(smallDot51, 15, 4);
+        SmallDot smallDot52 = new SmallDot();
+        addObject(smallDot52, 16, 4);
+        SmallDot smallDot53 = new SmallDot();
+        addObject(smallDot53, 5, 5);
+        SmallDot smallDot54 = new SmallDot();
+        addObject(smallDot54, 10, 5);
+        SmallDot smallDot55 = new SmallDot();
+        addObject(smallDot55, 16, 5);
+        SmallDot smallDot56 = new SmallDot();
+        addObject(smallDot56, 5, 6);
+        SmallDot smallDot57 = new SmallDot();
+        addObject(smallDot57, 10, 6);
+        SmallDot smallDot58 = new SmallDot();
+        addObject(smallDot58, 16, 6);
+        SmallDot smallDot59 = new SmallDot();
+        addObject(smallDot59, 5, 7);
+        SmallDot smallDot60 = new SmallDot();
+        addObject(smallDot60, 10, 7);
+        SmallDot smallDot61 = new SmallDot();
+        addObject(smallDot61, 16, 7);
+        SmallDot smallDot62 = new SmallDot();
+        addObject(smallDot62, 5, 8);
+        SmallDot smallDot63 = new SmallDot();
+        addObject(smallDot63, 6, 8);
+        SmallDot smallDot64 = new SmallDot();
+        addObject(smallDot64, 7, 8);
+        SmallDot smallDot65 = new SmallDot();
+        addObject(smallDot65, 8, 8);
+        SmallDot smallDot66 = new SmallDot();
+        addObject(smallDot66, 9, 8);
+        SmallDot smallDot67 = new SmallDot();
+        addObject(smallDot67, 10, 8);
+        SmallDot smallDot68 = new SmallDot();
+        addObject(smallDot68, 11, 8);
+        SmallDot smallDot69 = new SmallDot();
+        addObject(smallDot69, 12, 8);
+        SmallDot smallDot70 = new SmallDot();
+        addObject(smallDot70, 13, 8);
+        SmallDot smallDot71 = new SmallDot();
+        addObject(smallDot71, 14, 8);
+        SmallDot smallDot72 = new SmallDot();
+        addObject(smallDot72, 15, 8);
+        SmallDot smallDot73 = new SmallDot();
+        addObject(smallDot73, 16, 8);
+        SmallDot smallDot74 = new SmallDot();
+        addObject(smallDot74, 17, 8);
+        
+        // smallDots middle
+        
+        SmallDot smallDot75 = new SmallDot();
+        addObject(smallDot75, 5, 9);
+        SmallDot smallDot76 = new SmallDot();
+        addObject(smallDot76, 10, 9);
+        SmallDot smallDot77 = new SmallDot();
+        addObject(smallDot77, 13, 9);
+        SmallDot smallDot78 = new SmallDot();
+        addObject(smallDot78, 22, 9);
+        SmallDot smallDot79 = new SmallDot();
+        addObject(smallDot79, 25, 9);
+        SmallDot smallDot80 = new SmallDot();
+        addObject(smallDot80, 30, 9);
+        SmallDot smallDot81 = new SmallDot();
+        addObject(smallDot81, 5, 10);
+        SmallDot smallDot82 = new SmallDot();
+        addObject(smallDot82, 10, 10);
+        SmallDot smallDot83 = new SmallDot();
+        addObject(smallDot83, 13, 10);
+        SmallDot smallDot84 = new SmallDot();
+        addObject(smallDot84, 22, 10);
+        SmallDot smallDot85 = new SmallDot();
+        addObject(smallDot85, 25, 10);
+        SmallDot smallDot86 = new SmallDot();
+        addObject(smallDot86, 30, 10);
+        SmallDot smallDot87 = new SmallDot();
+        addObject(smallDot87, 5, 11);
+        SmallDot smallDot88 = new SmallDot();
+        addObject(smallDot88, 6, 11);
+        SmallDot smallDot89 = new SmallDot();
+        addObject(smallDot89, 7, 11);
+        SmallDot smallDot90 = new SmallDot();
+        addObject(smallDot90, 8, 11);
+        SmallDot smallDot91 = new SmallDot();
+        addObject(smallDot91, 9, 11);
+        SmallDot smallDot92 = new SmallDot();
+        addObject(smallDot92, 10, 11);
+        SmallDot smallDot93 = new SmallDot();
+        addObject(smallDot93, 13, 11);
+        SmallDot smallDot94 = new SmallDot();
+        addObject(smallDot94, 14, 11);
+        SmallDot smallDot95 = new SmallDot();
+        addObject(smallDot95, 15, 11);
+        SmallDot smallDot96 = new SmallDot();
+        addObject(smallDot96, 16, 11);
+        SmallDot smallDot97 = new SmallDot();
+        addObject(smallDot97, 19, 11);
+        SmallDot smallDot98 = new SmallDot();
+        addObject(smallDot98, 20, 11);
+        SmallDot smallDot99 = new SmallDot();
+        addObject(smallDot99, 21, 11);
+        SmallDot smallDot100 = new SmallDot();
+        addObject(smallDot100, 22, 11);
+        SmallDot smallDot101 = new SmallDot();
+        addObject(smallDot101, 25, 11);
+        SmallDot smallDot102 = new SmallDot();
+        addObject(smallDot102, 26, 11);
+        SmallDot smallDot103 = new SmallDot();
+        addObject(smallDot103, 27, 11);
+        SmallDot smallDot104 = new SmallDot();
+        addObject(smallDot104, 28, 11);
+        SmallDot smallDot105 = new SmallDot();
+        addObject(smallDot105, 29, 11);
+        SmallDot smallDot106 = new SmallDot();
+        addObject(smallDot106, 30, 11);
+        SmallDot smallDot107 = new SmallDot();
+        addObject(smallDot107, 10, 12);
+        SmallDot smallDot108 = new SmallDot();
+        addObject(smallDot108, 16, 12);
+        SmallDot smallDot109 = new SmallDot();
+        addObject(smallDot109, 19, 12);
+        SmallDot smallDot110 = new SmallDot();
+        addObject(smallDot110, 25, 12);
+        SmallDot smallDot111 = new SmallDot();
+        addObject(smallDot111, 10, 13);
+        SmallDot smallDot112 = new SmallDot();
+        addObject(smallDot112, 16, 13);
+        SmallDot smallDot113 = new SmallDot();
+        addObject(smallDot113, 19, 13);
+        SmallDot smallDot114 = new SmallDot();
+        addObject(smallDot114, 25, 13);
+        SmallDot smallDot115 = new SmallDot();
+        addObject(smallDot115, 10, 14);
+        SmallDot smallDot116 = new SmallDot();
+        addObject(smallDot116, 13, 14);
+        SmallDot smallDot117 = new SmallDot();
+        addObject(smallDot117, 14, 14);
+        SmallDot smallDot118 = new SmallDot();
+        addObject(smallDot118, 15, 14);
+        SmallDot smallDot119 = new SmallDot();
+        addObject(smallDot119, 15, 14);
+        SmallDot smallDot120 = new SmallDot();
+        addObject(smallDot120, 16, 14);
+        SmallDot smallDot121 = new SmallDot();
+        addObject(smallDot121, 17, 14);
+        SmallDot smallDot122 = new SmallDot();
+        addObject(smallDot122, 18, 14);
+        SmallDot smallDot123 = new SmallDot();
+        addObject(smallDot123, 19, 14);
+        SmallDot smallDot124 = new SmallDot();
+        addObject(smallDot124, 20, 14);
+        SmallDot smallDot125 = new SmallDot();
+        addObject(smallDot125, 21, 14);
+        SmallDot smallDot126 = new SmallDot();
+        addObject(smallDot126, 22, 14);
+        SmallDot smallDot127 = new SmallDot();
+        addObject(smallDot127, 25, 14);
+        SmallDot smallDot128 = new SmallDot();
+        addObject(smallDot128, 10, 15);
+        SmallDot smallDot129 = new SmallDot();
+        addObject(smallDot129, 13, 15);
+        SmallDot smallDot130 = new SmallDot();
+        addObject(smallDot130, 22, 15);
+        SmallDot smallDot131 = new SmallDot();
+        addObject(smallDot131, 25, 15);
+        SmallDot smallDot132 = new SmallDot();
+        addObject(smallDot132, 10, 16);
+        SmallDot smallDot133 = new SmallDot();
+        addObject(smallDot133, 13, 16);
+        SmallDot smallDot134 = new SmallDot();
+        addObject(smallDot134, 22, 16);
+        SmallDot smallDot135 = new SmallDot();
+        addObject(smallDot135, 25, 16);
+        SmallDot smallDot136 = new SmallDot();
+        addObject(smallDot136, 10, 17);
+        SmallDot smallDot137 = new SmallDot();
+        addObject(smallDot137, 11, 17);
+        SmallDot smallDot138 = new SmallDot();
+        addObject(smallDot138, 12, 17);
+        SmallDot smallDot139 = new SmallDot();
+        addObject(smallDot139, 13, 17);
+        SmallDot smallDot140 = new SmallDot();
+        addObject(smallDot140, 22, 17);
+        SmallDot smallDot141 = new SmallDot();
+        addObject(smallDot141, 23, 17);
+        SmallDot smallDot142 = new SmallDot();
+        addObject(smallDot142, 24, 17);
+        SmallDot smallDot143 = new SmallDot();
+        addObject(smallDot143, 25, 17);
+        SmallDot smallDot144 = new SmallDot();
+        addObject(smallDot144, 10, 18);
+        SmallDot smallDot145 = new SmallDot();
+        addObject(smallDot145, 13, 18);
+        SmallDot smallDot146 = new SmallDot();
+        addObject(smallDot146, 22, 18);
+        SmallDot smallDot147 = new SmallDot();
+        addObject(smallDot147, 25, 18);
+        SmallDot smallDot148 = new SmallDot();
+        addObject(smallDot148, 10, 19);
+        SmallDot smallDot149 = new SmallDot();
+        addObject(smallDot149, 13, 19);
+        SmallDot smallDot150 = new SmallDot();
+        addObject(smallDot150, 22, 19);
+        SmallDot smallDot151 = new SmallDot();
+        addObject(smallDot151, 25, 19);
+        SmallDot smallDot152 = new SmallDot();
+        addObject(smallDot152, 10, 20);
+        SmallDot smallDot153 = new SmallDot();
+        addObject(smallDot153, 13, 20);
+        SmallDot smallDot154 = new SmallDot();
+        addObject(smallDot154, 14, 20);
+        SmallDot smallDot155 = new SmallDot();
+        addObject(smallDot155, 15, 20);
+        SmallDot smallDot156 = new SmallDot();
+        addObject(smallDot156, 16, 20);
+        SmallDot smallDot157 = new SmallDot();
+        addObject(smallDot157, 17, 20);
+        SmallDot smallDot158 = new SmallDot();
+        addObject(smallDot158, 18, 20);
+        SmallDot smallDot159 = new SmallDot();
+        addObject(smallDot159, 19, 20);
+        SmallDot smallDot160 = new SmallDot();
+        addObject(smallDot160, 20, 20);
+        SmallDot smallDot161 = new SmallDot();
+        addObject(smallDot161, 21, 20);
+        SmallDot smallDot162 = new SmallDot();
+        addObject(smallDot162, 22, 20);
+        SmallDot smallDot163 = new SmallDot();
+        addObject(smallDot163, 25, 20);
+        SmallDot smallDot164 = new SmallDot();
+        addObject(smallDot164, 10, 21);
+        SmallDot smallDot165 = new SmallDot();
+        addObject(smallDot165, 13, 21);
+        SmallDot smallDot166 = new SmallDot();
+        addObject(smallDot166, 22, 21);
+        SmallDot smallDot167 = new SmallDot();
+        addObject(smallDot167, 25, 21);
+        SmallDot smallDot168 = new SmallDot();
+        addObject(smallDot168, 10, 22);
+        SmallDot smallDot169 = new SmallDot();
+        addObject(smallDot169, 13, 22);
+        SmallDot smallDot170 = new SmallDot();
+        addObject(smallDot170, 22, 22);
+        SmallDot smallDot171 = new SmallDot();
+        addObject(smallDot171, 25, 22);
+        
+        
+        //smallDots down up
+        
+        SmallDot smallDot172 = new SmallDot();
+        addObject(smallDot172, 5, 23);
+        SmallDot smallDot173 = new SmallDot();
+        addObject(smallDot173, 6, 23);
+        SmallDot smallDot174 = new SmallDot();
+        addObject(smallDot174, 7, 23);
+        SmallDot smallDot175 = new SmallDot();
+        addObject(smallDot175, 8, 23);
+        SmallDot smallDot176 = new SmallDot();
+        addObject(smallDot176, 9, 23);
+        SmallDot smallDot177 = new SmallDot();
+        addObject(smallDot177, 10, 23);
+        SmallDot smallDot178 = new SmallDot();
+        addObject(smallDot178, 11, 23);
+        SmallDot smallDot179 = new SmallDot();
+        addObject(smallDot179, 12, 23);
+        SmallDot smallDot180 = new SmallDot();
+        addObject(smallDot180, 13, 23);
+        SmallDot smallDot181 = new SmallDot();
+        addObject(smallDot181, 14, 23);
+        SmallDot smallDot182 = new SmallDot();
+        addObject(smallDot182, 15, 23);
+        SmallDot smallDot183 = new SmallDot();
+        addObject(smallDot183, 16, 23);
+        SmallDot smallDot184 = new SmallDot();
+        addObject(smallDot184, 19, 23);
+        SmallDot smallDot185 = new SmallDot();
+        addObject(smallDot185, 20, 23);
+        SmallDot smallDot186 = new SmallDot();
+        addObject(smallDot186, 21, 23);
+        SmallDot smallDot187 = new SmallDot();
+        addObject(smallDot187, 22, 23);
+        SmallDot smallDot188 = new SmallDot();
+        addObject(smallDot188, 23, 23);
+        SmallDot smallDot189 = new SmallDot();
+        addObject(smallDot189, 24, 23);
+        SmallDot smallDot190 = new SmallDot();
+        addObject(smallDot190, 25, 23);
+        SmallDot smallDot191 = new SmallDot();
+        addObject(smallDot191, 26, 23);
+        SmallDot smallDot192 = new SmallDot();
+        addObject(smallDot192, 27, 23);
+        SmallDot smallDot193 = new SmallDot();
+        addObject(smallDot193, 28, 23);
+        SmallDot smallDot194 = new SmallDot();
+        addObject(smallDot194, 29, 23);
+        SmallDot smallDot195 = new SmallDot();
+        addObject(smallDot195, 30, 23);
+        SmallDot smallDot196 = new SmallDot();
+        addObject(smallDot196, 5, 24);
+        SmallDot smallDot197 = new SmallDot();
+        addObject(smallDot197, 10, 24);
+        SmallDot smallDot198 = new SmallDot();
+        addObject(smallDot198, 16, 24);
+        SmallDot smallDot199 = new SmallDot();
+        addObject(smallDot199, 19, 24);
+        SmallDot smallDot200 = new SmallDot();
+        addObject(smallDot200, 25, 24);
+        SmallDot smallDot201 = new SmallDot();
+        addObject(smallDot201, 30, 24);
+        SmallDot smallDot202 = new SmallDot();
+        addObject(smallDot202, 5, 25);
+        SmallDot smallDot203 = new SmallDot();
+        addObject(smallDot203, 10, 25);
+        SmallDot smallDot204 = new SmallDot();
+        addObject(smallDot204, 16, 25);
+        SmallDot smallDot205 = new SmallDot();
+        addObject(smallDot205, 19, 25);
+        SmallDot smallDot206 = new SmallDot();
+        addObject(smallDot206, 25, 25);
+        SmallDot smallDot207 = new SmallDot();
+        addObject(smallDot207, 30, 25);
+        SmallDot smallDot208 = new SmallDot();
+        addObject(smallDot208, 5, 26);
+        SmallDot smallDot209 = new SmallDot();
+        addObject(smallDot209, 6, 26);
+        SmallDot smallDot210 = new SmallDot();
+        addObject(smallDot210, 7, 26);
+        SmallDot smallDot211 = new SmallDot();
+        addObject(smallDot211, 10, 26);
+        SmallDot smallDot212 = new SmallDot();
+        addObject(smallDot212, 11, 26);
+        SmallDot smallDot213 = new SmallDot();
+        addObject(smallDot213, 12, 26);
+        SmallDot smallDot214 = new SmallDot();
+        addObject(smallDot214, 13, 26);
+        SmallDot smallDot215 = new SmallDot();
+        addObject(smallDot215, 14, 26);
+        SmallDot smallDot216 = new SmallDot();
+        addObject(smallDot216, 15, 26);
+        SmallDot smallDot217 = new SmallDot();
+        addObject(smallDot217, 16, 26);
+        SmallDot smallDot218 = new SmallDot();
+        addObject(smallDot218, 17, 26);
+        SmallDot smallDot219 = new SmallDot();
+        addObject(smallDot219, 18, 26);
+        SmallDot smallDot220 = new SmallDot();
+        addObject(smallDot220, 19, 26);
+        SmallDot smallDot221 = new SmallDot();
+        addObject(smallDot221, 20, 26);
+        SmallDot smallDot222 = new SmallDot();
+        addObject(smallDot222, 21, 26);
+        SmallDot smallDot223 = new SmallDot();
+        addObject(smallDot223, 22, 26);
+        SmallDot smallDot224 = new SmallDot();
+        addObject(smallDot224, 23, 26);
+        SmallDot smallDot225 = new SmallDot();
+        addObject(smallDot225, 24, 26);
+        SmallDot smallDot226 = new SmallDot();
+        addObject(smallDot226, 25, 26);
+        SmallDot smallDot229 = new SmallDot();
+        addObject(smallDot229, 28, 26);
+        SmallDot smallDot230 = new SmallDot();
+        addObject(smallDot230, 29, 26);
+        SmallDot smallDot231 = new SmallDot();
+        addObject(smallDot231, 30, 26);
+        SmallDot smallDot233 = new SmallDot();
+        addObject(smallDot233, 7, 27);
+        SmallDot smallDot234 = new SmallDot();
+        addObject(smallDot234, 10, 27);
+        SmallDot smallDot235 = new SmallDot();
+        addObject(smallDot235, 13, 27);
+        SmallDot smallDot236 = new SmallDot();
+        addObject(smallDot236, 22, 27);
+        SmallDot smallDot237 = new SmallDot();
+        addObject(smallDot237, 25, 27);
+        SmallDot smallDot238 = new SmallDot();
+        addObject(smallDot238, 28, 27);
+        
+        // smallDots down down
+        
+        SmallDot smallDot239 = new SmallDot();
+        addObject(smallDot239, 7, 28);
+        SmallDot smallDot240 = new SmallDot();
+        addObject(smallDot240, 10, 28);
+        SmallDot smallDot241 = new SmallDot();
+        addObject(smallDot241, 13, 28);
+        SmallDot smallDot242 = new SmallDot();
+        addObject(smallDot242, 22, 28);
+        SmallDot smallDot243 = new SmallDot();
+        addObject(smallDot243, 25, 28);
+        SmallDot smallDot244 = new SmallDot();
+        addObject(smallDot244, 28, 28);
+        SmallDot smallDot245 = new SmallDot();
+        addObject(smallDot245, 5, 29);
+        SmallDot smallDot246 = new SmallDot();
+        addObject(smallDot246, 6, 29);
+        SmallDot smallDot247 = new SmallDot();
+        addObject(smallDot247, 7, 29);
+        SmallDot smallDot248 = new SmallDot();
+        addObject(smallDot248, 8, 29);
+        SmallDot smallDot249 = new SmallDot();
+        addObject(smallDot249, 9, 29);
+        SmallDot smallDot250 = new SmallDot();
+        addObject(smallDot250, 10, 29);
+        SmallDot smallDot251 = new SmallDot();
+        addObject(smallDot251, 13, 29);
+        SmallDot smallDot252 = new SmallDot();
+        addObject(smallDot252, 14, 29);
+        SmallDot smallDot253 = new SmallDot();
+        addObject(smallDot253, 15, 29);
+        SmallDot smallDot254 = new SmallDot();
+        addObject(smallDot254, 16, 29);
+        SmallDot smallDot255 = new SmallDot();
+        addObject(smallDot255, 19, 29);
+        SmallDot smallDot256 = new SmallDot();
+        addObject(smallDot256, 20, 29);
+        SmallDot smallDot257 = new SmallDot();
+        addObject(smallDot257, 21, 29);
+        SmallDot smallDot258 = new SmallDot();
+        addObject(smallDot258, 22, 29);
+        SmallDot smallDot259 = new SmallDot();
+        addObject(smallDot259, 25, 29);
+        SmallDot smallDot260 = new SmallDot();
+        addObject(smallDot260, 26, 29);
+        SmallDot smallDot261 = new SmallDot();
+        addObject(smallDot261, 27, 29);
+        SmallDot smallDot262 = new SmallDot();
+        addObject(smallDot262, 28, 29);
+        SmallDot smallDot263 = new SmallDot();
+        addObject(smallDot263, 29, 29);
+        SmallDot smallDot264 = new SmallDot();
+        addObject(smallDot264, 30, 29);
+        SmallDot smallDot265 = new SmallDot();
+        addObject(smallDot265, 5, 30);
+        SmallDot smallDot266 = new SmallDot();
+        addObject(smallDot266, 16, 30);
+        SmallDot smallDot267 = new SmallDot();
+        addObject(smallDot267, 19, 30);
+        SmallDot smallDot268 = new SmallDot();
+        addObject(smallDot268, 30, 30);
+        SmallDot smallDot269 = new SmallDot();
+        addObject(smallDot269, 5, 31);
+        SmallDot smallDot270 = new SmallDot();
+        addObject(smallDot270, 16, 31);
+        SmallDot smallDot271 = new SmallDot();
+        addObject(smallDot271, 19, 31);
+        SmallDot smallDot272 = new SmallDot();
+        addObject(smallDot272, 30, 31);
+        SmallDot smallDot273 = new SmallDot();
+        addObject(smallDot273, 5, 32);
+        SmallDot smallDot274 = new SmallDot();
+        addObject(smallDot274, 6, 32);
+        SmallDot smallDot275 = new SmallDot();
+        addObject(smallDot275, 7, 32);
+        SmallDot smallDot276 = new SmallDot();
+        addObject(smallDot276, 8, 32);
+        SmallDot smallDot277 = new SmallDot();
+        addObject(smallDot277, 9, 32);
+        SmallDot smallDot278 = new SmallDot();
+        addObject(smallDot278, 10, 32);
+        SmallDot smallDot279 = new SmallDot();
+        addObject(smallDot279, 11, 32);
+        SmallDot smallDot280 = new SmallDot();
+        addObject(smallDot280, 12, 32);
+        SmallDot smallDot281 = new SmallDot();
+        addObject(smallDot281, 13, 32);
+        SmallDot smallDot282 = new SmallDot();
+        addObject(smallDot282, 14, 32);
+        SmallDot smallDot283 = new SmallDot();
+        addObject(smallDot283, 15, 32);
+        SmallDot smallDot284 = new SmallDot();
+        addObject(smallDot284, 16, 32);
+        SmallDot smallDot285 = new SmallDot();
+        addObject(smallDot285, 17, 32);
+        SmallDot smallDot286 = new SmallDot();
+        addObject(smallDot286, 18, 32);
+        SmallDot smallDot287 = new SmallDot();
+        addObject(smallDot287, 19, 32);
+        SmallDot smallDot288 = new SmallDot();
+        addObject(smallDot288, 20, 32);
+        SmallDot smallDot289 = new SmallDot();
+        addObject(smallDot289, 21, 32);
+        SmallDot smallDot290 = new SmallDot();
+        addObject(smallDot290, 22, 32);
+        SmallDot smallDot291 = new SmallDot();
+        addObject(smallDot291, 23, 32);
+        SmallDot smallDot292 = new SmallDot();
+        addObject(smallDot292, 24, 32);
+        SmallDot smallDot293 = new SmallDot();
+        addObject(smallDot293, 25, 32);
+        SmallDot smallDot294 = new SmallDot();
+        addObject(smallDot294, 26, 32);
+        SmallDot smallDot295 = new SmallDot();
+        addObject(smallDot295, 27, 32);
+        SmallDot smallDot296 = new SmallDot();
+        addObject(smallDot296, 28, 32);
+        SmallDot smallDot297 = new SmallDot();
+        addObject(smallDot297, 29, 32);
+        SmallDot smallDot298 = new SmallDot();
+        addObject(smallDot298, 30, 32);
+        
+        
+        
+        
+        
+        
+    }
+      
     public void addWalls() {
         // Paredes de cima/meio (quadrado 1)
         Wall wallq1 = new Wall();
@@ -1506,70 +2120,45 @@ public class Level1 extends World {
 
     public Level1() {
         super(36, 36, 15);
+        
         // Set background color
         getBackground().setColor(Color.BLACK);
         getBackground().fill();
 
         // Arrays
         Player[] players = new Player[2];
-        SmallDot[] smallDots = new SmallDot[240];
-        BigDot[] bigDots = new BigDot[4];
 
         // Players Initialization
-        Player player1 = new Player(1, smallDots, bigDots);
-        players[0] = player1;
+        Player player1 = new Player(1);
         addObject(player1, 17, 26);
 
-        Player player2 = new Player(2, smallDots, bigDots);
-        players[1] = player2;
+        Player player2 = new Player(2);
         addObject(player2, 18, 26);
 
-        // Small dots Initialization
-        SmallDot smallDot1 = new SmallDot();
-        smallDots[0] = smallDot1;
-        addObject(smallDot1, 2, 3);
-
-        SmallDot smallDot2 = new SmallDot();
-        smallDots[1] = smallDot2;
-        addObject(smallDot2, 2, 4);
-
-        // Big dots Initialization
-        BigDot bigDot1 = new BigDot();
-        bigDots[0] = bigDot1;
-        addObject(bigDot1, 6, 6);
-
-        BigDot bigDot2 = new BigDot();
-        bigDots[1] = bigDot2;
-        addObject(bigDot2, 7, 7);
-
-        EnemyTest enemy1 = new EnemyTest(players);
-
-        // addObject(enemy1, 400, 100);
-
-        // Timer timer = new Timer(startingTime);
-        // addObject(timer, 10, 10);
-
-        // addObject(timer, 0, 0);
+        // Enemy 
+        EnemyTest enemy1 = new EnemyTest();
+        addObject(enemy1, 17, 17);
+        
+        
         addWalls();
+        addSmallDots();
+        
+        Greenfoot.setSpeed(35);
+        
     }
 
     public void act() {
+
         // Timer
-
         long currentTime = (System.currentTimeMillis() - startingTime) / 1000;
-        // GreenfootImage timer = new GreenfootImage(String.valueOf(currentTime), 240,
-        // Color.BLACK, new Color(0, 0, 0, 0));
-        // getBackground().drawImage(timer, 10, 10);
-
         showText("Time: " + String.valueOf(currentTime), getWidth() / 3, 1);
 
         // Score
         showText("Score: " + String.valueOf(score), 2 * getWidth() / 3, 1);
 
-        try {
-            Thread.sleep(150);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
+        // Player Health
+        showText("Health: "+ String.valueOf(playersHealth), getWidth() / 2, getHeight() - 1); 
+         
+       
     }
 }

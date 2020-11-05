@@ -10,9 +10,14 @@ public class EnemyTest extends Enemy
 {
     
     
-    public EnemyTest(Player[] players) {
-        super.players = players;
-    
+    public EnemyTest() {
+        
+        
+        // Image scale
+        GreenfootImage image = getImage();
+        image.scale(15, 15);
+        setImage(image);
+        
     }
     
     public void act() 

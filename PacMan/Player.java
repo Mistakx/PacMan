@@ -1,3 +1,4 @@
+
 import greenfoot.*;
 import java.util.List;
 
@@ -6,13 +7,11 @@ public class Player extends Actor {
     private int playerNumber;
     private boolean isMoving;
     private int movementDirection; // 0 - Up, 1 - Right, 2 - Down, 3 - Left
-    private SmallDot[] smallDots;
-    private BigDot[] bigDots;
+    private int spawnX = -1;
+    private int spawnY = -1;
 
-    public Player(int playerNumber, SmallDot[] smallDots, BigDot[] bigDots) {
+    public Player(int playerNumber) {
         this.playerNumber = playerNumber;
-        this.smallDots = smallDots;
-        this.bigDots = bigDots;
 
         // Image scale
         GreenfootImage image = getImage();
@@ -80,7 +79,7 @@ public class Player extends Actor {
             // Moving to the left    
             } else if (movementDirection == 3) {
                 // Checks if there is a wall to the left before moving to the left
-                if ((getWorld().getObjectsAt(getX() - 1, getY(), Wall.class)).isEmpty() == false) {
+                if (getWorld().getObjectsAt(getX() - 1, getY(), Wall.class).isEmpty() == false) {
                     isMoving = false;
                 } else {
                     setLocation(getX() - 1, getY());
@@ -90,47 +89,49 @@ public class Player extends Actor {
     }
 
     public void eatSmallDot() {
-        for (int i = 0; i < smallDots.length; i++) {
-            if (smallDots[i] != null) {
-                // TODO: Static level1
-                if ((getX() == smallDots[i].getX()) && (getY() == smallDots[i].getY())) {
-                    Level1.score += 10;
-
-                    getWorld().removeObject(smallDots[i]);
-                    smallDots[i] = null;
-                }
-            }
+        
+        List<SmallDot> smallDotToEat = getWorld().getObjectsAt(getX(), getY(), SmallDot.class);
+        
+        if (smallDotToEat.isEmpty() == false) {
+            Level1.score += 10;
+            getWorld().removeObject(smallDotToEat.get(0));
+        
         }
     }
 
     public void eatBigDot() {
-        for (int i = 0; i < bigDots.length; i++) {
-            if (bigDots[i] != null) {
-                // TODO: Static level1
-                if ((getX() == bigDots[i].getX()) && (getY() == bigDots[i].getY())) {
-                    Level1.score += 50;
-
-                    getWorld().removeObject(bigDots[i]);
-                    bigDots[i] = null;
-                }
-            }
+        
+        List<BigDot> bigDotToEat = getWorld().getObjectsAt(getX(), getY(), BigDot.class);
+        
+        if (bigDotToEat.isEmpty() == false) {
+            Level1.score += 50;
+            getWorld().removeObject(bigDotToEat.get(0));
+        
         }
     }
-
+    
+    
     public void hitEnemy() {
-        List<Enemy> intersectingEnemies = getIntersectingObjects(Enemy.class);
-
-        if (intersectingEnemies.size() > 0) {
-            // TODO: Static level1
+        
+        List<Enemy> enemyHit = getWorld().getObjectsAt(getX(), getY(), Enemy.class);
+        
+        if (enemyHit.isEmpty() == false) {
+            
             Level1.playersHealth -= 1;
-
-            // TODO: Static level1
-            if (Level1.playersHealth == 0) {
-                getWorld().showText("GAME OVER!", getX() / 2, getY() / 2);
+            
+            setLocation(spawnX, spawnY);
+            
+            if (Level1.playersHealth < 1){
+            
+                getWorld().showText("GAME OVER!", getWorld().getWidth() / 2, getWorld().getHeight() / 2 );
+                
             }
+            
         }
     }
 
+    
+    
     public void teleportWalls() {
         
         // Left teleport
@@ -146,9 +147,14 @@ public class Player extends Actor {
     }
 
     public void act() {
+        // Sets starting positions
+        if (spawnX == -1){spawnX = getX();}
+        if (spawnY == -1){spawnY = getY();}
+
         move(playerNumber);
         eatSmallDot();
         eatBigDot();
         teleportWalls();
+        hitEnemy();
     }
 }

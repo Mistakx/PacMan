@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Player
-comment1.params=playerNumber\ smallDots\ bigDots
-comment1.target=Player(int,\ SmallDot[],\ BigDot[])
+comment1.params=playerNumber
+comment1.target=Player(int)
 comment2.params=playerNumber
 comment2.target=void\ move(int)
 comment3.params=

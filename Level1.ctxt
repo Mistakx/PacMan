@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Level1
+comment1.params=
+comment1.target=Level1()
+comment10.params=
+comment10.target=void\ enemiesTeleportWalls()
+comment11.params=
+comment11.target=void\ playersTeleportWalls()
+comment12.params=
+comment12.target=void\ act()
+comment2.params=
+comment2.target=greenfoot.GreenfootSound\ getBackgroundMusic()
+comment3.params=
+comment3.target=void\ addIntersections()
+comment4.params=
+comment4.target=void\ addCorners()
+comment5.params=enemy
+comment5.target=void\ leaveTheBox(Enemy)
+comment6.params=
+comment6.target=void\ addSmallDots()
+comment7.params=
+comment7.target=void\ addBigDots()
+comment8.params=
+comment8.target=void\ addWalls()
+comment9.params=
+comment9.target=void\ resetCoins()
+numComments=13

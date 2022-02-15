@@ -10,7 +10,7 @@ Graded in 16/20.
 
 ## Stage 2
 
-![Project](./assets/stage1.png)
+![Project](./assets/stage2.png)
 
 # Instructions
 
